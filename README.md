@@ -135,10 +135,6 @@ Empty files you can drop into `sd:/balatro/`:
 - LÖVE, used as the reference for the API that is imitated here
 - FreeType, libpng, zlib
 
-## Author
-
-[ThatSkywalkerAbood](https://github.com/ThatSkywalkerAbood)
-
 ## License
 
 The code in this repository (the C sources, the Lua files in `balatro/wii/` and the tools) is released under the [MIT License](LICENSE).
