@@ -141,4 +141,12 @@ Empty files you can drop into `sd:/balatro/`:
 
 ## License
 
-My own code is released under: MIT. This does not cover Balatro or anything extracted from it.
+The code in this repository (the C sources, the Lua files in `balatro/wii/` and the tools) is released under the [MIT License](LICENSE).
+
+This does not cover Balatro. The game, its code, art, music and sounds belong to LocalThunk and Playstack, and none of them are included or licensed here.
+
+### Third-party software
+- Lua 5.1.5 (in `lualib/`), MIT license, Copyright (C) PUC-Rio. Keep its copyright notice with the source.
+- Portions of this software are copyright (c) The FreeType Project (www.freetype.org). All rights reserved.
+- libpng and zlib, under their own permissive licenses.
+- devkitPro, devkitPPC and libogc, under their own licenses.
