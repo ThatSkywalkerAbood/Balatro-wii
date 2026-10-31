@@ -34,6 +34,11 @@ local PATCHES = {
   },
   game = {
     -- cards of the draw pile can sleep (opt.lua): the move and update loops skip sleeping objects
+    -- a brand new install has no tutorial_progress yet: the menu code must not crash on it
+    { "and G.SETTINGS.tutorial_progress.completed_parts['big_blind'] then G.SETTINGS.tutorial_complete = true end",
+      "and G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.completed_parts['big_blind'] then G.SETTINGS.tutorial_complete = true end", false },
+    { "(G.SETTINGS.tutorial_complete or G.SETTINGS.tutorial_progress.completed_parts['big_blind'])",
+      "(G.SETTINGS.tutorial_complete or (G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.completed_parts['big_blind']))", false },
     { "local move_dt = math.min(1/20, self.real_dt)", "WII_SLEEP_LOOPS = true\n        local move_dt = math.min(1/20, self.real_dt)", false },
     { "            if v.FRAME.MOVE < G.FRAMES.MOVE then v:move(move_dt) end",
       "            if v.FRAME.MOVE < G.FRAMES.MOVE and not v.opt_asleep and not v.opt_nomove then v:move(move_dt) end", false },
