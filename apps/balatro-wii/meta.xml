@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>Balatro Wii</name>
+	<coder>ThatSkywalkerAbood</coder>
+	<version>1.0</version>
+	<release_date>20240220000000</release_date>
+	<ahb_access/>
+	<short_description>Wii Port of Balatro</short_description>
+	<long_description>Balatro Wii is an unofficial homebrew port of the hit poker-inspired roguelike deckbuilder for the Nintendo Wii console. Combine valid poker hands with unique Joker cards to create powerful synergies and big wins, now running on classic hardware.
+
+Credits:
+Original Game: LocalThunk
+Wii Port: ThatSkywalkerAbood</long_description>
+</app>
