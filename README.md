@@ -48,8 +48,8 @@ You need your **own legal copy** of Balatro on PC.
 ### 2. Convert the sounds
 The Wii cannot read Balatro's `.ogg` files, so they are converted once to `.wav`.
 1. Install [ffmpeg](https://ffmpeg.org/download.html) and make sure `ffmpeg` works in a Command Prompt.
-2. Run `tools\convert_audio.bat "C:\balatro\src"`
-3. It creates an `audio` folder with one `.wav` per sound (16-bit, 32 kHz, stereo for `music*`, mono for everything else). Expect roughly 120 MB.
+2. Put the `convert_audio.bat` in `balatro/src/` folder next to the `resources` folder.
+3. It creates an `audio` folder (you are gonna need to copy this folder to `sd:/balatro/`) with one `.wav` per sound (16-bit, 32 kHz, stereo for `music*`, mono for everything else). Expect roughly 120 MB.
 
 **Important:** do not delete the original `resources\sounds` folder. The game still looks for the original sound names, and the `.wav` files are only a replacement for playback. Both must be on the card.
 
